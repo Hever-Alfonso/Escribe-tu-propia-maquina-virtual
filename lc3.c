@@ -23,3 +23,23 @@ enum
 
 /* Arreglo de registros */
 uint16_t reg[R_COUNT];
+
+enum
+{
+    OP_BR = 0, /* salto condicional (branch) */
+    OP_ADD, /* suma */
+    OP_LD, /* cargar (load) */
+    OP_ST, /* almacenar (store) */
+    OP_JSR, /* salto a registro (jump register) */
+    OP_AND, /* AND a nivel de bits */
+    OP_LDR, /* cargar desde registro (load register) */
+    OP_STR, /* almacenar en registro (store register) */
+    OP_RTI, /* instrucción de retorno de interrupción (unused) */
+    OP_NOT, /* NOT a nivel de bits */
+    OP_LDI, /* carga indirecta (load indirect)*/
+    OP_STI, /* almacenamiento indirecto (store indirect) */
+    OP_JMP, /* salto (jump)*/
+    OP_RES, /* reservado (unused) */
+    OP_LEA, /* cargar dirección efectiva (load effective address) */
+    OP_TRAP, /* llamada a sistema (trap) */
+};
