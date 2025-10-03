@@ -43,3 +43,10 @@ enum
     OP_LEA, /* cargar dirección efectiva (load effective address) */
     OP_TRAP, /* llamada a sistema (trap) */
 };
+
+enum
+{
+    FL_POS = 1 << 0, /* P: positivo */
+    FL_ZRO = 1 << 1, /* Z: cero */
+    FL_NEG = 1 << 2, /* N: negativo */
+};
